@@ -114,7 +114,7 @@ While DESeq2 highlights canonical lactation-associated metabolic pathways, the g
 - Learn gene-wise dispersion parameters
 - Extend to larger RNA-seq cohorts
 - Compare with scVI / ZINB-based models
-- Integrate batch-effect modeling explicitly
+- Integrate batch-effect modelling explicitly
 
 ---
 
@@ -139,9 +139,10 @@ While DESeq2 highlights canonical lactation-associated metabolic pathways, the g
 │ ├── latent_space.png
 │ ├── logfc_scatter.png
 │ ├── go_deseq2.png
-│ └── go_generative.png
+│ ├── go_generative.png
 │ ├── kegg_deseq2.png
 │ └── kegg_generative.png
+|
 ├── requirements.txt
 ├── LICENSE
 └── README.md
