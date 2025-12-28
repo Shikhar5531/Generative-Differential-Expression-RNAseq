@@ -62,7 +62,7 @@ The model learns a **low-dimensional latent representation of samples**, from wh
 
 The 2D latent space learned by the NB-VAE shows a **clear separation between lactation and virgin samples**, despite the model being trained without condition labels.
 
-![Latent space learned by the NB-VAE](results/figures/Latent_space.png)
+![Latent space learned by the NB-VAE](Results/Figures/Latent_space.png)
 
 ---
 
@@ -74,7 +74,7 @@ Generative log fold-changes derived from the model show strong agreement with DE
 - Expected shrinkage of extreme DESeq2 logFC values
 - Increased stability for low-count genes
 
-![DESeq2 vs Generative log fold-change comparison](results/figures/DESeq2_Vs._GDE.png)
+![DESeq2 vs Generative log fold-change comparison](Results/Figures/DESeq2_Vs._GDE.png)
 
 ---
 
@@ -88,13 +88,13 @@ Several genes assigned **NA adjusted p-values** by DESeq2 due to sparse counts r
 
 To compare biological signals at the pathway level, Gene Ontology (GO) & KEGG Biological Process enrichment was performed for both approaches.
 
-### KEGG Enrichment – DESeq2
+### GO Enrichment – DESeq2
 
-![GO enrichment from DESeq2](results/figures/KEGG_Enrichment.png)
+![GO enrichment from DESeq2](Results/Figures/GO_Enrichment.png)
 
-### KEGG Enrichment – Generative Model
+### GO Enrichment – Generative Model
 
-![GO enrichment from generative differential expression](results/figures/KEGG_Enrichment.png)
+![GO enrichment from generative differential expression](Results/Figures/GO_Enrichment_GDE.png)
 
 While DESeq2 highlights canonical lactation-associated metabolic pathways, the generative model yields a **more conservative but distinct set of immune-related and regulatory pathways**, reflecting its shrinkage-based inference and uncertainty modeling.
 
@@ -140,7 +140,8 @@ While DESeq2 highlights canonical lactation-associated metabolic pathways, the g
 │ ├── logfc_scatter.png
 │ ├── go_deseq2.png
 │ └── go_generative.png
-│
+│ ├── kegg_deseq2.png
+│ └── kegg_generative.png
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -153,4 +154,6 @@ While DESeq2 highlights canonical lactation-associated metabolic pathways, the g
 This project was conducted as a **learning-driven experiment** to understand how deep generative models can capture biological structure in transcriptomic data.
 
 Feedback, critique, and discussion are warmly welcome.
+
+Thank you!!
 
