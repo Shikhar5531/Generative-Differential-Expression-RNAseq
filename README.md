@@ -16,9 +16,22 @@ Classical differential expression methods such as **DESeq2** rely on gene-wise s
 - Each gene is tested independently, ignoring global structure across samples
 - Uncertainty is quantified at the gene level, not at the representation level
 
-This project asks a simple but fundamental question:
+This project asks a simple question:
 
 > **Can a generative deep learning model learn biologically meaningful structure from raw count data, and provide complementary differential expression insights?**
+
+---
+
+## 📚 Related Work & Inspiration
+
+This project was inspired by prior research on probabilistic and deep generative models for transcriptomic data. In particular, recent methods such as scVI demonstrate how latent variable models with Negative Binomial likelihoods can capture biological structure in RNA-seq data.
+
+While the present work does not aim to reproduce or extend these methods, it explores similar ideas in a simplified bulk RNA-seq setting, with an emphasis on interpretability and comparison to classical differential expression analysis.
+
+**Key references:**
+- Lopez et al., *Deep generative modeling for single-cell transcriptomics*, Nature Methods (2018)  
+- Love et al., *Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2*, Genome Biology (2014)  
+- Kingma & Welling, *Auto-Encoding Variational Bayes* (2014)
 
 ---
 
